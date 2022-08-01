@@ -5,7 +5,8 @@
 	font-size:3em;
 }
 .App{
-	position:sticky;
+	position:fixed;
+	width: 100%;
 	top:0;
 }
 .projImg img{
@@ -15,17 +16,18 @@
 	object-fit:contain;
 	border-radius:.3em;
 }
-#Projects{
+#projects{
 	display:flex;
 	flex-direction:column;
 	align-items:center;
 	color:#000;
+	padding: 20px;
 }
-#Projects span{
+#projects span{
 	font-size:1.5em;
 	margin:1em;
 }
-#Skills{
+#skills{
 	display:flex;
 	flex-direction:column;
 	align-items:center;
@@ -37,16 +39,20 @@
 	align-items:center;
 	padding-bottom:4em;
 }
+.projImg a{
+	word-break: break-all;
+}
 .skillist{
 	padding-bottom:4em;
 }
-#Skills img{
+#skills img{
 	height:3em;
 	width:3em;
 	margin:.5em;
 }
-#Skills span{
+#skills span{
 	display:block;
+	padding-bottom:5px;
 	color:#112B3C;
 }
 .skillist>div{
@@ -62,7 +68,7 @@
 	background:#205375;
 	height:100%;
 }
-#About{
+#about{
 	display:flex;
 	flex-direction:column;
 	justify-content:space-between;
@@ -162,12 +168,13 @@ a{
 @media(min-width:600px){
 	.App {
 		display:flex;
-		position:sticky;
+		position:fixed;
 		top:0;
 		justify-content:space-between;
 		align-items:center;
+		width: 100%;
 	}
-	#About{
+	#about{
 		display:flex;
 		flex-direction:row;
 		justify-content:space-around;

@@ -6,6 +6,7 @@ import Projects from './components/Projects';
 import Skills from './components/Skills';
 import Contact from './components/Contact';
 var logo='/logo.svg';
+
 function App() {
 	return (
 		<div>

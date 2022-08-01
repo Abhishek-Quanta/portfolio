@@ -14,8 +14,9 @@ function Header(prps){
 			display:"flex",
 			flexFlow:"column",
 			alignItems:'center',
+			paddingBottom:'5px'
 			}}
-			onClick={()=>{if(name!="Resume")setAct(name)}}
+			onClick={()=>{if(name!=="Resume")setAct(name)}}
 		>
 			<a href={href}>{name}</a>
 			<div id={indId} style={{background:"#fff",
